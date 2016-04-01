@@ -1,0 +1,12 @@
+<h1>Welcome to Cat Chat</h1>
+
+<h3>This is a message board dedicated to discussing the beautiful Exotic Shorthair cat breed!</h3>
+
+<ul>
+  {{#each model as |post|}}
+    <li>{{post.user}}'s post titled {{post.title}}</li>
+  {{/each}}
+</ul>
+
+<p>(You must be aware of the rules before contributing to this site in any way.)</p>
+{{#link-to 'rules'}}See the rules here!{{/link-to}}
