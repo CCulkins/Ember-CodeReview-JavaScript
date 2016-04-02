@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 var posts = [{
-  id: 1,
+  id: 1, //how does the program know to increase the id by one every time a new post is added?
   user: "CatsAreDaBestMeow92",
   catPic: "http://www.catcraze.com/images/listings/501a170bf1155eefbafcc6d2a8bf111c.jpg",
   title: "Look at This Cutie",
