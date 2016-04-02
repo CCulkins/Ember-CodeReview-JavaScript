@@ -1,0 +1,11 @@
+.user {
+  font-size: 16px;
+  font-style: italic;
+}
+p {
+  margin: 0;
+}
+.title {
+  font-size: 22px;
+  font-weight: bolder;
+}
