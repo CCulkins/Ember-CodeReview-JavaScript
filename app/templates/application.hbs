@@ -1,2 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
-{{#link-to 'about'}}Click here to see what we're about.{{/link-to}}
+<header>
+  {{#link-to 'application'}}<h1>Cat Chat</h1>{{/link-to}}
+</header>
+
+<div class="container">
+  {{outlet}}
+</div>
+
+<footer>
+  <h6>Footer says "Meow"</h6>
+</footer>

@@ -1,10 +1,11 @@
-<h1>Welcome to Cat Chat</h1>
+<h2>Welcome!</h2>
 
 <h3>This is a message board dedicated to discussing the beautiful Exotic Shorthair cat breed!</h3>
 
 <ul>
   {{#each model as |post|}}
-    <li>{{post.user}}'s post titled {{post.title}}</li>
+  <!-- this is a loop -->
+    {{post-tile post=post}}
   {{/each}}
 </ul>
 
