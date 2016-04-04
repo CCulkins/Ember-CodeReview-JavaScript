@@ -8,11 +8,11 @@
     {{post-tile post=post edit="edit" deletePost="deletePost"}}
     <!-- the router is the only place that can access the model  -->
     <!-- using post=post tells the program that the post inside and outside of the component are the same -->
+    <!-- {{add-comment add="add"}} -->
   {{/each}}
 </ul>
 
 {{new-post save="save"}}
-{{add-comment save="save"}}
 
 <p>(You must be aware of the rules before contributing to this site in any way.)</p>
 {{#link-to 'rules'}}See the rules here!{{/link-to}}
