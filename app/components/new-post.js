@@ -16,6 +16,7 @@ export default Ember.Component.extend({
         message: this.get('message'),
         tldr: this.get('tldr'),
       };
+      
       this.set('addNewPost', false);
       this.sendAction('save', params);
     }

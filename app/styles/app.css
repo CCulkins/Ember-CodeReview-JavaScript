@@ -1,9 +1,20 @@
+h1, h2, h3, h4, h5, h6, p {
+  color: 696969;
+  font-family:sans-serif;
+  font-weight: lighter;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
 .user {
   font-size: 16px;
   font-style: italic;
 }
 p {
   margin: 0;
+  width: 500px;
 }
 .title {
   font-size: 22px;
@@ -12,4 +23,24 @@ p {
 
 img {
   width: 500px;
+}
+
+.fullPost {
+  font-size: 30px;
+  background-color: #ff9999;
+  color: white;
+}
+
+.tldr {
+  font-size: 11px;
+}
+
+.edit {
+  background-color: #ff99cc;
+  color: white;
+}
+
+.delete {
+  background-color: #ff6699;
+  color: white;
 }

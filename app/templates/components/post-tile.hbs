@@ -1,15 +1,20 @@
-<li>
+<li class="tile">
   <p class="title">{{post.title}}</p>
   <p class="user">By: {{post.user}}</p>
+
   {{#if fullPostDisplaying }}
     <p class="image"><img src={{post.catPic}} alt={{post.title}} {{action 'fullPostNoDisplay'}}></p>
     <p class="message">{{post.message}}</p>
     {{add-comment add="add"}}
+
   {{else}}
-    <button {{action 'fullPostDisplays'}}>Full Post</button>
+    <button class="fullPost" {{action 'fullPostDisplays'}}>Full Post</button>
+
   {{/if}}
-  <br><br><p class="tldr">tl:dr: {{post.tldr}}</p>
+
+  <p class="tldr">(tl:dr: {{post.tldr}})</p>
+
   {{edit-post post=post edit="edit"}}
-  <button {{action 'delete' post}}>Remove</button>
+  <button class="delete" {{action 'delete' post}}>Remove</button>
   <br><br>
 </li>

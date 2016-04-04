@@ -13,6 +13,7 @@ export default Ember.Component.extend({
         commentUser: this.get('user'),
         commentMessage: this.get('message'),
       };
+
       this.set('addComment', false);
       this.sendAction('add', params);
     }
