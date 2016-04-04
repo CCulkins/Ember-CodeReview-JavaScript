@@ -1,0 +1,35 @@
+{{#if editPostForm}}
+  <h4>Edit {{post.user}} {{post.title}}</h4>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="user">Username:</label>
+          {{input value=user id="user" placeholder=post.user}}
+        </div>
+
+        <div class="form-group">
+          <label for="catPic">Image Link:</label>
+          {{input value=catPic id="catPic" placeholder=post.catPic}}
+        </div>
+
+        <div class="form-group">
+          <label for="title">Post Title:</label>
+          {{input value=title id="title" placeholder=post.title}}
+        </div>
+
+        <div class="form-group">
+          <label for="message">Post body:</label>
+          {{input value=message id="message" placeholder=post.message}}
+        </div>
+
+        <div class="form-group">
+          <label for="tldr">Short summary (tl:dr):</label>
+          {{input value=tldr id="tldr" placeholder=post.tldr}}
+        </div>
+
+        <button {{action 'edit' post}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'editPostForm'}}>Edit</button>
+{{/if}}

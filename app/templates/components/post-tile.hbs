@@ -8,6 +8,7 @@
     <button {{action 'fullPostDisplays'}}>Full Post</button>
   {{/if}}
   <br><br><p class="tldr">tl:dr: {{post.tldr}}</p>
+  {{edit-post post=post edit="edit"}}
   <button {{action 'delete' post}}>Remove</button>
   <br><br>
 </li>

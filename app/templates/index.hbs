@@ -5,8 +5,8 @@
 <ul>
   {{#each model as |post|}}
   <!-- this is a loop -->
-    {{post-tile post=post deletePost="deletePost"}}
-    <!-- for each post we will create a post tile  -->
+    {{post-tile post=post edit="edit" deletePost="deletePost"}}
+    <!-- the router is the only place that can access the model  -->
     <!-- using post=post tells the program that the post inside and outside of the component are the same -->
   {{/each}}
 </ul>
