@@ -5,11 +5,13 @@
 <ul>
   {{#each model as |post|}}
   <!-- this is a loop -->
-    {{post-tile post=post}}
+    {{post-tile post=post deletePost="deletePost"}}
     <!-- for each post we will create a post tile  -->
     <!-- using post=post tells the program that the post inside and outside of the component are the same -->
   {{/each}}
 </ul>
+
+{{new-post save="save"}}
 
 <p>(You must be aware of the rules before contributing to this site in any way.)</p>
 {{#link-to 'rules'}}See the rules here!{{/link-to}}

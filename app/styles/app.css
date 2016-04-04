@@ -9,3 +9,7 @@ p {
   font-size: 22px;
   font-weight: bolder;
 }
+
+img {
+  width: 500px;
+}

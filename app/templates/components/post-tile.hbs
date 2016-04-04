@@ -1,6 +1,6 @@
 <li>
-  <p class="user">{{post.user}}</p>
   <p class="title">{{post.title}}</p>
+  <p class="user">By: {{post.user}}</p>
   {{#if fullPostDisplaying }}
     <p class="image"><img src={{post.catPic}} alt={{post.title}} {{action 'fullPostNoDisplay'}}></p>
     <p class="message">{{post.message}}</p>
@@ -8,5 +8,6 @@
     <button {{action 'fullPostDisplays'}}>Full Post</button>
   {{/if}}
   <br><br><p class="tldr">tl:dr: {{post.tldr}}</p>
+  <button {{action 'delete' post}}>Remove</button>
   <br><br>
 </li>

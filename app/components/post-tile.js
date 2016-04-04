@@ -8,6 +8,11 @@ export default Ember.Component.extend({
     },
     fullPostNoDisplay: function() {
       this.set('fullPostDisplaying', false);
+    },
+    delete(post) {
+      if (confirm('Are you sure you would like to delete this post permanently?')) {
+        this.sendAction('deletePost', post);
+      }
     }
   }
 });
