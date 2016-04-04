@@ -4,6 +4,7 @@
   {{#if fullPostDisplaying }}
     <p class="image"><img src={{post.catPic}} alt={{post.title}} {{action 'fullPostNoDisplay'}}></p>
     <p class="message">{{post.message}}</p>
+
   {{else}}
     <button {{action 'fullPostDisplays'}}>Full Post</button>
   {{/if}}

@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
   fullPostDisplaying: false,
+  seeComments: false,
   editPostForm: false,
 
   actions: {
@@ -12,6 +13,12 @@ export default Ember.Component.extend({
     fullPostNoDisplay: function() {
       this.set('fullPostDisplaying', false);
     },
+    // seeComment: function() {
+    //   this.set('seeComments', true);
+    // },
+    // seeNoComment: function() {
+    //   this.set('seeComments', false);
+    // }
     edit(post, params) {
       this.sendAction('edit', post, params);
     },

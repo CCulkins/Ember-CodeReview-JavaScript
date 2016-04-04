@@ -12,6 +12,12 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
 
+    add(params) {
+      var addComment = this.store.createRecord('post', params);
+      addComment.save();
+      this.transitionTo('index');
+    },
+
     edit(post, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
