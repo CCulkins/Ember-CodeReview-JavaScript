@@ -18,8 +18,3 @@
 {{else}}
     <button {{action 'newCommentFormShow'}}>New Comment</button>
 {{/if}}
-<ul>
-  {{#each model as |comment|}}
-     {{add-comment add='add'}}
-  {{/each}}
-</ul>

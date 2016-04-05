@@ -23,6 +23,10 @@ export default Ember.Component.extend({
       if (confirm('Are you sure you would like to delete this post permanently?')) {
         this.sendAction('deletePost', post);
       }
+    },
+
+    add(comment, params) {
+      this.sendAction('add', comment, params);
     }
   }
 });
