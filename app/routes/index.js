@@ -13,7 +13,7 @@ export default Ember.Route.extend({
     },
 
     add(params) {
-      var addComment = this.store.createRecord('post', params);
+      var addComment = this.store.createRecord('comment', params);
       addComment.save();
       this.transitionTo('index');
     },
