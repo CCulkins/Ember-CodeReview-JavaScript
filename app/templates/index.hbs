@@ -3,9 +3,10 @@
 <h3>This is a message board dedicated to discussing the beautiful Exotic Shorthair cat breed!</h3>
 <!--Why does it only display 3 of my hardcoded posts? -->
 <ul>
+  {{log model.length}}
   {{#each model as |post|}}
   <!-- this is a loop -->
-    {{post-tile post=post edit="edit" deletePost="deletePost"}}
+    {{post-tile add="add" post=post edit="edit" deletePost="deletePost"}}
     <!-- the router is the only place that can access the model  -->
     <!-- using post=post tells the program that the post inside and outside of the component are the same -->
   {{/each}}

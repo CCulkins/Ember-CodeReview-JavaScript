@@ -12,6 +12,7 @@ export default Ember.Component.extend({
       var params = {
         commentUser: this.get('commentUser'),
         commentMessage: this.get('commentMessage'),
+        post: this.get('post')
       };
 
       this.set('addComment', false);
