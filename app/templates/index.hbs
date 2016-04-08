@@ -6,6 +6,8 @@
   {{#each model as |post|}}
   <!-- this is a loop -->
     {{post-tile add="add" post=post edit="edit" deletePost="deletePost"}}
+    {{add-comment save="save" add="add" comment=model}}
+
     <!-- the router is the only place that can access the model  -->
     <!-- using post=post tells the program that the post inside and outside of the component are the same -->
   {{/each}}

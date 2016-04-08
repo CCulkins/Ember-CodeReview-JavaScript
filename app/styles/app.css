@@ -23,7 +23,9 @@ p {
 
 img {
   width: 500px;
+  border radius: 50%;
 }
+
 
 .fullPost {
   font-size: 30px;
@@ -43,4 +45,9 @@ img {
 .delete {
   background-color: #ff6699;
   color: white;
+}
+
+.tile {
+  border-color: pink;
+  border-width: thin;
 }

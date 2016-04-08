@@ -17,6 +17,16 @@ export default Ember.Component.extend({
 
       this.set('addComment', false);
       this.sendAction('add', params);
+    },
+
+    save(params) {
+      var newPost = this.store.createRecord('post', params);
+      var comment = params.addComment;
+      comment.get('post').addObject(newPost);
+      newPost.save().then(function() {
+        return comment.save();
+      });
+      this.transitionTo('index', params.comment);
     }
   }
 });
