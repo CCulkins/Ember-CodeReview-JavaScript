@@ -3,7 +3,7 @@
 <h3>This is a message board dedicated to discussing the beautiful Exotic Shorthair cat breed!</h3>
 <!--Why does it only display 3 of my hardcoded posts? -->
 <ul>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
   <!-- this is a loop -->
     {{post-tile add="add" post=post edit="edit" deletePost="deletePost"}}
     {{add-comment save="save" add="add" comment=model}}
@@ -14,6 +14,10 @@
 </ul>
 
 {{new-post save="save"}}
+
+{{#each model.comments as |comment|}}
+{{comment-tile comment=comment destroyComment="destroyComment"}}
+{{/each}}
 
 <p>(You must be aware of the rules before contributing to this site in any way.)</p>
 {{#link-to 'rules'}}See the rules here!{{/link-to}}

@@ -3,7 +3,6 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
   fullPostDisplaying: false,
-  seeComments: false,
   editPostForm: false,
 
   actions: {
