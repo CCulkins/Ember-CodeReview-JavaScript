@@ -7,6 +7,9 @@
   <!-- this is a loop -->
     {{post-tile add="add" post=post edit="edit" deletePost="deletePost"}}
     {{add-comment save="save" add="add" comment=model}}
+    {{#each model.comments as |comment|}}
+    {{comment-tile comment=comment deleteComment="deleteComment"}}
+    {{/each}}
 
     <!-- the router is the only place that can access the model  -->
     <!-- using post=post tells the program that the post inside and outside of the component are the same -->
@@ -15,9 +18,6 @@
 
 {{new-post save="save"}}
 
-{{#each model.comments as |comment|}}
-{{comment-tile comment=comment destroyComment="destroyComment"}}
-{{/each}}
 
 <p>(You must be aware of the rules before contributing to this site in any way.)</p>
 {{#link-to 'rules'}}See the rules here!{{/link-to}}

@@ -37,7 +37,7 @@ export default Ember.Route.extend({
 
     deletePost(post) {
       post.destroyRecord();
-      this.transitionto('index');
+      this.transitionTo('index');
     },
 
     deleteComment(comment) {
