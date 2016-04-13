@@ -11,6 +11,7 @@ export default Ember.Component.extend({
     edit(post) {
       var params = {
         user: this.get('user'),
+        userTime: this.get('userTime'),
         catPic: this.get('catPic'),
         title: this.get('title'),
         message: this.get('message'),

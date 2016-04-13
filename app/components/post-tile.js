@@ -1,10 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-
+  fullUserInfo: Ember.computed('post.user', 'post.userTime', function() {
+    return this.get('post.user') + ' - (' + this.get('post.userTime') + ')';
+  }),
   fullPostDisplaying: false,
   editPostForm: false,
-  
+
 
   actions: {
     fullPostDisplays: function() {

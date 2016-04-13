@@ -1,14 +1,14 @@
 <li class="tile">
   <p class="title">{{post.title}}</p>
-  <p class="user">By: {{post.user}}</p>
+  <p class="user">{{fullUserInfo}}</p>
+
 
   {{#if fullPostDisplaying }}
     <p class="image"><img src={{post.catPic}} alt={{post.title}} {{action 'fullPostNoDisplay'}}></p>
     <p class="message">{{post.message}}</p>
     <br>
-    {{post-awards post}}{{add-comment add='add' save="save" post=post}}
-
-    <!-- <button class="addLove" {{action 'postLove'}}>Heart</button> -->
+    Awards Won: {{post-awards post}}
+    {{add-comment add='add' save="save" post=post}}
 
   {{else}}
     <button class="fullPost" {{action 'fullPostDisplays'}}>Full Post</button>
