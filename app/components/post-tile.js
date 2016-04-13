@@ -6,6 +6,7 @@ export default Ember.Component.extend({
   }),
   fullPostDisplaying: false,
   editPostForm: false,
+  bookmarked: Ember.inject.service(),
 
 
   actions: {
@@ -30,5 +31,9 @@ export default Ember.Component.extend({
     add(params) {
       this.sendAction('add', params);
     },
+
+    bookmark(item) {
+      this.get('bookmarked').add(item);
+    }
   }
 });
