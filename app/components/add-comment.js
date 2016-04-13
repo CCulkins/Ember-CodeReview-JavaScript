@@ -26,6 +26,7 @@ export default Ember.Component.extend({
       newPost.save().then(function() {
         return comment.save();
       });
+
       this.transitionTo('index', params.comment);
     }
   }

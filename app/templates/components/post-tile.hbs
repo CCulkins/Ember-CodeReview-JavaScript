@@ -6,17 +6,16 @@
     <p class="image"><img src={{post.catPic}} alt={{post.title}} {{action 'fullPostNoDisplay'}}></p>
     <p class="message">{{post.message}}</p>
     {{add-comment add='add' save="save" post=post}}
-    <!-- {{comment-tile comment=comment deleteComment="deleteComment"}} -->
-    <!-- {{post.comment.title}} -->
 
   {{else}}
     <button class="fullPost" {{action 'fullPostDisplays'}}>Full Post</button>
-
   {{/if}}
 
   <p class="tldr">(tl:dr: {{post.tldr}})</p>
-
   {{edit-post post=post edit="edit"}}
+
   <button class="delete" {{action 'delete' post}}>Remove</button>
-  <br><br>
+
+  <br>
+  <br>
 </li>

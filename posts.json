@@ -5,6 +5,7 @@
   "title": "Look at This Cutie",
   "message": "Exotic Shorthairs are super-cute omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh omigosh.",
   "tldr": "Exotic Shorthairs are cute."
+
 }, {
   "id": 2,
   "user": "MyOtherHoodieHasEars",
@@ -12,6 +13,7 @@
   "title": "My moms cat",
   "message": "This is my mom's cat. His name is Fred, but we call him UFO, because his eyes remind us of aliens. His past-times include: stealing food straight off of my plate and staring out the window like a crazy person.",
   "tldr": "My mom's cat UFO is a food thief."
+
 }, {
   "id": 3,
   "user": "ExoticBreeder3",
@@ -19,6 +21,7 @@
   "title": "Kitten for sale",
   "message": "Hello, my name is Sharron, and I am an Exotic breeder located in Eugene, OR. We just had our beauiful Exotic Mindy give birth to 6 cute kittens! Here, is a picture of one of them. This is Spots. Spots is a male calico, and will be up for adoption in July. Comment below if interested!",
   "tldr": "Male calico for sale in Oregon! Comment for details!"
+
 }, {
   "id": 4,
   "user": "IheartSnoopy4Ever",
@@ -26,12 +29,15 @@
   "title": "Another pic of Snoopy!",
   "message": "Snoopy is my favorite famous internet cat. I just can't get enough of him!",
   "tldr": "Snoopy love!"
+
   }],
   "comments": [{
-    "commentUser": "CatsCatsCats",
-    "commentMessage": "Throwup on your pillow attack dog, run away and pretend to be victim. Throwup on your pillow loves cheeseburgers, yet if it fits, i sits or jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed so cats go for world domination so eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap."
-    }, {
-    "commentUser": "CatIpsumBestIpsum",
-    "commentMessage": "Destroy the blinds spit up on light gray carpet instead of adjacent linoleum hate dog walk on car leaving trail of paw prints on hood and windshield. Damn that dog chase ball of string but stare at ceiling light for cough furball, so walk on car leaving trail of paw prints on hood and windshield but if it fits, i sits. Lick arm hair."
-    }]
+  "commentUser": "CatsCatsCats",
+  "commentMessage": "Throwup on your pillow attack dog, run away and pretend to be victim. Throwup on your pillow loves cheeseburgers, yet if it fits, i sits or jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed so cats go for world domination so eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap."
+
+  }, {
+  "commentUser": "CatIpsumBestIpsum",
+  "commentMessage": "Destroy the blinds spit up on light gray carpet instead of adjacent linoleum hate dog walk on car leaving trail of paw prints on hood and windshield. Damn that dog chase ball of string but stare at ceiling light for cough furball, so walk on car leaving trail of paw prints on hood and windshield but if it fits, i sits. Lick arm hair."
+
+  }]
 }

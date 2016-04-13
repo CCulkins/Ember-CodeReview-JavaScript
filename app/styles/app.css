@@ -12,11 +12,14 @@ h1 {
   font-size: 16px;
   font-style: italic;
 }
+
 p {
+  font-size: 14px;
   margin: 0;
   width: 500px;
 }
-.title {
+
+.title, .comments {
   font-size: 22px;
   font-weight: bolder;
 }
@@ -25,7 +28,6 @@ img {
   width: 500px;
   border radius: 50%;
 }
-
 
 .fullPost {
   font-size: 30px;
@@ -50,4 +52,13 @@ img {
 .tile {
   border-color: pink;
   border-width: thin;
+}
+
+.commentUser {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.commentMessage {
+  font-size: 14px;
 }

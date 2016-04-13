@@ -1,20 +1,24 @@
 {{#if addComment}}
+
   <h1>Add Comment</h1>
     <div>
       <form>
+
         <div class="form-group">
-          <label for="commentUser">Username:</label>
+          <label for="commentUser" class="commentUser">Username:</label>
           {{input value=commentUser id="commentUser"}}
         </div>
 
         <div class="form-group">
-          <label for="commentMessage">Comment body:</label>
+          <label for="commentMessage" class="commentMessage">Comment body:</label>
           {{input value=commentMessage id="commentMessage"}}
         </div>
 
         <button {{action 'add'}}>Save</button>
+
       </form>
     </div>
+
 {{else}}
-    <button {{action 'newCommentFormShow'}}>New Comment</button>
+   <button {{action 'newCommentFormShow'}}>New Comment</button>
 {{/if}}
