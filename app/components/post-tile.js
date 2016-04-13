@@ -4,6 +4,7 @@ export default Ember.Component.extend({
 
   fullPostDisplaying: false,
   editPostForm: false,
+  
 
   actions: {
     fullPostDisplays: function() {
@@ -26,6 +27,6 @@ export default Ember.Component.extend({
 
     add(params) {
       this.sendAction('add', params);
-    }
+    },
   }
 });

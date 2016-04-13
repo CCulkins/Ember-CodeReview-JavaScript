@@ -14,6 +14,7 @@ export default Ember.Component.extend({
         catPic: this.get('catPic'),
         title: this.get('title'),
         message: this.get('message'),
+        awards: this.get('awards'),
         tldr: this.get('tldr'),
       };
 

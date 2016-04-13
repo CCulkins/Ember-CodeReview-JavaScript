@@ -43,6 +43,6 @@ export default Ember.Route.extend({
     deleteComment(comment) {
       comment.destroyRecord();
       this.transitionTo('index');
-    }
+    },
   }
 });

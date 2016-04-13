@@ -14,9 +14,10 @@ export default Ember.Component.extend({
         catPic: this.get('catPic'),
         title: this.get('title'),
         message: this.get('message'),
+        awards: parseInt(this.get('awards')),
         tldr: this.get('tldr'),
       };
-      
+
       this.set('addNewPost', false);
       this.sendAction('save', params);
     }
